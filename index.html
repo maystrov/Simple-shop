@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./Element.js" defer></script>
+    <script src="./script.js" defer></script>
+    <title>Simple shop</title>
+</head>
+<body>
+    <div id="main">
+        <h1>Simple shop</h1>
+        <div id="container">
+            <div id="top-section">
+                <div id="products">
+                    <h2>Products</h2>
+                    <span class="added-item error-hidden">Item is already in cart!</span>
+
+
+                    <ul id="main-list">
+                        <li class="products-row">
+                            <div class="products-image">
+                                <img src="./images/phone.jpg" alt="phone">
+                            </div>
+                            <span class="products-title">Phone</span> 
+                            <span>1000$</span>
+                            <input type="button" data-id="111" class="buy-button" value="Buy">
+
+                        </li>
+                        <li class="products-row">
+                            <div class="products-image"><img src="./images/TV.jpg" alt="TV"></div>
+                            <span class="products-title">TV</span> 
+                            <span>500$</span>
+                            <input type="button" data-id="222" class="buy-button" value="Buy">
+                        </li>
+                        <li class="products-row">
+                            <div class="products-image"><img src="./images/laptop.jpg" alt="Laptop"></div>
+                            <span class="products-title">Laptop</span> 
+                            <span>2000$</span>
+                            <input type="button" data-id="333" class="buy-button" value="Buy">
+                        </li>
+                        <li class="products-row">
+                            <div class="products-image"><img src="./images/earphones.jpg" alt="earphones"></div>
+                            <span class="products-title">Earphones</span> 
+                            <span>100$</span>
+                            <input type="button" data-id="444" class="buy-button" value="Buy">
+                        </li>
+                        <li class="products-row">
+                            <div class="products-image"><img src="./images//mouse.jpg" alt="mouse"></div>
+                            <span class="products-title">Mouse</span> 
+                            <span>50$</span>
+                            <input type="button" data-id="555" class="buy-button" value="Buy">
+                        </li>
+                    </ul>
+                </div>
+    
+                <div id="cart">
+                    <h2>Cart</h2>
+                    <div class="cart-row cart-subtitle">
+                        <span class="delete-title">Del </span>
+                        <span>Img</span>
+                        <span class="products-title">Product</span> 
+                        <span class="cart-price">Price</span>
+                        <span>Quantity</span>
+                        <span>Total</span>
+                    </div>
+
+                    <ul id="cart-list">
+                    
+                    </ul>
+                    <h2 class="cart-total">Total: 0$</h2>
+                    <button type="button" class="make-order">Make order</button>
+
+                </div>
+            </div>
+            <div class="header-container">
+                <input type="button" class="orders-button" value="Show orders">
+                <button class="close-button">x</button>
+                </div>
+               
+                <div id="orders">
+                    
+                   
+                </div>
+           
+        
+
+     
+        
+        </div>
+
+         
+      
+    
+    </div>
+    
+</body>
+</html>
